@@ -1,4 +1,3 @@
-import Category from '#models/category'
 import Word from '#models/word'
 import type { HttpContext } from '@adonisjs/core/http'
 
