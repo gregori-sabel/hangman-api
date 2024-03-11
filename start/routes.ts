@@ -20,5 +20,6 @@ router
     })
     router.resource('/category', CategoriesController).apiOnly()
     router.resource('/word', WordsController).apiOnly()
+    router.get('/randomwordfromcategory/:id', [WordsController, 'randomWordFromCategory'])
   })
   .prefix('/api')
